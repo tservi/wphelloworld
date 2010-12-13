@@ -49,13 +49,29 @@ License: Artistic licence version 2 as seen on http://bit.ly/1Mq0Vp
 /**
  * Define certain plugin variables as constants
  */
-if ( !defined( 'HELLO_WORLD_ABSPATH' ) )
-    define( 'HELLO_WORLD_ABSPATH', plugin_dir_path( __FILE__ ) );
-if ( !defined( 'HELLO_WORLD_BASENAME' ) )
-    define( 'HELLO_WORLD_BASENAME', plugin_basename( __FILE__ ) );
-if ( !defined( 'HELLO_WORLD__FILE__' ) )
-    define( 'HELLO_WORLD__FILE__', __FILE__ );
 
+
+/**
+ * What the wp system shows to non registred users
+ */
+
+
+require_once( 'myMVC/loader.php' )                              ;
+
+function hello_world($data){    
+        global $post                                            ;
+        $hw = new HelloWorld();
+        echo $hw -> trigger_view();
+        return $data                                            ;
+}
+
+function activate_hello_world(){
+        global $post;
+        add_filter('the_content', 'hello_world', 10);
+        add_filter('the_excerpt', 'hello_world', 10);
+}
+
+activate_hello_world();
 
 
 

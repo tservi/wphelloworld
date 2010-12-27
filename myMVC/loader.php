@@ -29,26 +29,26 @@ error_reporting(E_ALL);
 */
 
 $thisFile = __FILE__ ;
-if ( !defined( 'MYMVC_LOADER' ) )
-    define( 'MYMVC_LOADER', $thisFile );
-if ( !defined( 'MYMVC_DIRNAME' ) )
-    define( 'MYMVC_DIRNAME', dirname( $thisFile ) );
+//if ( !defined( 'MYMVC_LOADER' ) )
+define( 'MYMVC_LOADER', $thisFile );
+//if ( !defined( 'MYMVC_DIRNAME' ) )
+define( 'MYMVC_DIRNAME', dirname( $thisFile ) );
     
 
-if ( !defined( 'MYMVC_CONTROLLERS' ) )
-    define( 'MYMVC_CONTROLLERS', MYMVC_DIRNAME . '/mvc/controllers' );
-if ( !defined( 'MYMVC_MODELS' ) )
-    define( 'MYMVC_MODELS', MYMVC_DIRNAME . '/mvc/models' );
-if ( !defined( 'MYMVC_VIEWS' ) )
-    define( 'MYMVC_VIEWS', MYMVC_DIRNAME . '/mvc/views' );
+//if ( !defined( 'MYMVC_CONTROLLERS' ) )
+define( 'MYMVC_CONTROLLERS', MYMVC_DIRNAME . '/mvc/controllers' );
+//if ( !defined( 'MYMVC_MODELS' ) )
+define( 'MYMVC_MODELS', MYMVC_DIRNAME . '/mvc/models' );
+//if ( !defined( 'MYMVC_VIEWS' ) )
+define( 'MYMVC_VIEWS', MYMVC_DIRNAME . '/mvc/views' );
     
 
-if ( !defined( 'MYMVC_CONFIGS' ) )
-    define( 'MYMVC_CONFIGS', MYMVC_DIRNAME . '/etc/configs' );
-if ( !defined( 'MYMVC_HELPERS' ) )
-    define( 'MYMVC_HELPERS', MYMVC_DIRNAME . '/etc/helpers' );
-if ( !defined( 'MYMVC_LIBS' ) )
-    define( 'MYMVC_LIBS', MYMVC_DIRNAME . '/etc/libs' );
+//if ( !defined( 'MYMVC_CONFIGS' ) )
+define( 'MYMVC_CONFIGS', MYMVC_DIRNAME . '/etc/configs' );
+//if ( !defined( 'MYMVC_HELPERS' ) )
+define( 'MYMVC_HELPERS', MYMVC_DIRNAME . '/etc/helpers' );
+//if ( !defined( 'MYMVC_LIBS' ) )
+define( 'MYMVC_LIBS', MYMVC_DIRNAME . '/etc/libs' );
 
 /*
     end of definitions

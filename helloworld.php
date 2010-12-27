@@ -73,6 +73,11 @@ function activate_hello_world(){
 
 activate_hello_world();
 
+/*
+ How to create a widget from my plugin?
+*/
+register_sidebar_widget('Hello world Widget',
+    'hello_world');
 
 
 ?>

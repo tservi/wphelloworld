@@ -1,1 +1,7 @@
-<div id="HelloWorld"><h1>Hello World!</h1></div>
+<div id="HelloWorld">
+    <h1>
+    <?php
+    echo "Hello world from php!";
+    ?>
+    </h1>
+</div>
